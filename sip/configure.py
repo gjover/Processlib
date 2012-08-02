@@ -84,7 +84,7 @@ if platform.system() == 'Windows':
     print "---------- extra_lib_dirs", makefile.extra_lib_dirs
     
 else:
-    makefile.extra_cxxflags = ['-pthread','-I../core/include','-I../tasks/include','-I' + numpy.get_include()]
+    makefile.extra_cxxflags = ['-pthread','-I../core/include','-I../tasks/include','-I' + config.sip_inc_dir,'-I' + numpy.get_include()]
     makefile.extra_libs = ['pthread','processlib']
     makefile.extra_lib_dirs = ['../build']
 
