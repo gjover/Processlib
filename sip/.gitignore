@@ -10,3 +10,4 @@ sip*.cpp
 *.dll
 *.pyd
 *.pyd.manifest
+.svn
