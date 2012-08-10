@@ -68,7 +68,8 @@ namespace Tasks
 %MethodCode
     std::stringstream str;
     str << *sipCpp;
-    sipRes = str.str().c_str();
+    const std::string& tmpString = str.str();
+    sipRes = tmpString.c_str();
 %End
   };
 
